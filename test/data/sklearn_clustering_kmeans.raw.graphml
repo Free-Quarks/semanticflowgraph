@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d18" for="edge" attr.name="annotation" attr.type="string" />
+  <key id="d17" for="edge" attr.name="id" attr.type="string" />
+  <key id="d16" for="node" attr.name="annotation_index" attr.type="long" />
+  <key id="d15" for="port" attr.name="annotation_index" attr.type="long" />
+  <key id="d14" for="node" attr.name="slot" attr.type="string" />
+  <key id="d13" for="node" attr.name="annotation_kind" attr.type="string" />
+  <key id="d12" for="node" attr.name="annotation" attr.type="string" />
+  <key id="d11" for="port" attr.name="value" attr.type="long" />
+  <key id="d10" for="port" attr.name="qual_name" attr.type="string" />
+  <key id="d9" for="port" attr.name="module" attr.type="string" />
+  <key id="d8" for="port" attr.name="id" attr.type="string" />
+  <key id="d7" for="port" attr.name="annotation" attr.type="string" />
+  <key id="d6" for="port" attr.name="value" attr.type="string" />
+  <key id="d5" for="port" attr.name="portkind" attr.type="string" />
+  <key id="d4" for="port" attr.name="argname" attr.type="string" />
+  <key id="d3" for="node" attr.name="qual_name" attr.type="string" />
+  <key id="d2" for="node" attr.name="module" attr.type="string" />
+  <key id="d1" for="graph" attr.name="output_node" attr.type="string" />
+  <key id="d0" for="graph" attr.name="input_node" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="__root__">
+      <graph edgedefault="directed">
+        <data key="d0">__in__</data>
+        <data key="d1">__out__</data>
+        <node id="read_csv:1">
+          <data key="d2">pandas.io.parsers.readers</data>
+          <data key="d3">read_csv</data>
+          <port name="filepath_or_buffer">
+            <data key="d4">filepath_or_buffer</data>
+            <data key="d5">input</data>
+            <data key="d6">datasets/iris.csv</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">1</data>
+            <data key="d9">pandas.core.frame</data>
+            <data key="d10">DataFrame</data>
+            <data key="d7">python/pandas/data-frame</data>
+          </port>
+        </node>
+        <node id="DataFrame.drop:1">
+          <data key="d2">pandas.core.frame</data>
+          <data key="d3">DataFrame.drop</data>
+          <port name="self">
+            <data key="d4">self</data>
+            <data key="d5">input</data>
+            <data key="d8">1</data>
+            <data key="d9">pandas.core.frame</data>
+            <data key="d10">DataFrame</data>
+            <data key="d7">python/pandas/data-frame</data>
+          </port>
+          <port name="labels">
+            <data key="d4">labels</data>
+            <data key="d5">input</data>
+            <data key="d6">Species</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="axis">
+            <data key="d4">axis</data>
+            <data key="d5">input</data>
+            <data key="d11">1</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">2</data>
+            <data key="d9">pandas.core.frame</data>
+            <data key="d10">DataFrame</data>
+            <data key="d7">python/pandas/data-frame</data>
+          </port>
+        </node>
+        <node id="KMeans:1">
+          <data key="d2">sklearn.cluster._kmeans</data>
+          <data key="d3">KMeans</data>
+          <data key="d12">python/sklearn/base-clusterer</data>
+          <data key="d13">construct</data>
+          <port name="n_clusters">
+            <data key="d4">n_clusters</data>
+            <data key="d5">input</data>
+            <data key="d11">3</data>
+            <data key="d7">python/builtins/int</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">3</data>
+            <data key="d9">sklearn.cluster._kmeans</data>
+            <data key="d10">KMeans</data>
+            <data key="d7">python/sklearn/base-clusterer</data>
+          </port>
+        </node>
+        <node id="getattr:4">
+          <data key="d2">builtins</data>
+          <data key="d3">getattr</data>
+          <data key="d14">values</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">2</data>
+            <data key="d9">pandas.core.frame</data>
+            <data key="d10">DataFrame</data>
+            <data key="d7">python/pandas/data-frame</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d6">values</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">4</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="KMeans.fit:1">
+          <data key="d2">sklearn.cluster._kmeans</data>
+          <data key="d3">KMeans.fit</data>
+          <data key="d12">python/sklearn/fit</data>
+          <data key="d13">function</data>
+          <port name="self">
+            <data key="d4">self</data>
+            <data key="d5">input</data>
+            <data key="d8">3</data>
+            <data key="d9">sklearn.cluster._kmeans</data>
+            <data key="d10">KMeans</data>
+            <data key="d7">python/sklearn/base-clusterer</data>
+            <data key="d15">1</data>
+          </port>
+          <port name="X">
+            <data key="d4">X</data>
+            <data key="d5">input</data>
+            <data key="d8">4</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+            <data key="d15">2</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">3</data>
+            <data key="d9">sklearn.cluster._kmeans</data>
+            <data key="d10">KMeans</data>
+            <data key="d7">python/sklearn/base-clusterer</data>
+          </port>
+          <port name="self!">
+            <data key="d4">self</data>
+            <data key="d5">output</data>
+            <data key="d8">3</data>
+            <data key="d9">sklearn.cluster._kmeans</data>
+            <data key="d10">KMeans</data>
+            <data key="d7">python/sklearn/base-clusterer</data>
+            <data key="d15">1</data>
+          </port>
+        </node>
+        <node id="getattr:5">
+          <data key="d2">builtins</data>
+          <data key="d3">getattr</data>
+          <data key="d14">cluster_centers_</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">3</data>
+            <data key="d9">sklearn.cluster._kmeans</data>
+            <data key="d10">KMeans</data>
+            <data key="d7">python/sklearn/base-clusterer</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d6">cluster_centers_</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">5</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <node id="getattr:6">
+          <data key="d2">builtins</data>
+          <data key="d3">getattr</data>
+          <data key="d14">labels_</data>
+          <data key="d12">python/sklearn/base-clusterer</data>
+          <data key="d16">2</data>
+          <data key="d13">slot</data>
+          <port name="0">
+            <data key="d4">0</data>
+            <data key="d5">input</data>
+            <data key="d8">3</data>
+            <data key="d9">sklearn.cluster._kmeans</data>
+            <data key="d10">KMeans</data>
+            <data key="d7">python/sklearn/base-clusterer</data>
+          </port>
+          <port name="1">
+            <data key="d4">1</data>
+            <data key="d5">input</data>
+            <data key="d6">labels_</data>
+            <data key="d7">python/builtins/str</data>
+          </port>
+          <port name="return">
+            <data key="d4">return</data>
+            <data key="d5">output</data>
+            <data key="d8">6</data>
+            <data key="d9">numpy</data>
+            <data key="d10">ndarray</data>
+            <data key="d7">python/numpy/ndarray</data>
+          </port>
+        </node>
+        <edge source="read_csv:1" target="DataFrame.drop:1" sourceport="return" targetport="self">
+          <data key="d17">1</data>
+          <data key="d18">python/pandas/data-frame</data>
+        </edge>
+        <edge source="DataFrame.drop:1" target="getattr:4" sourceport="return" targetport="0">
+          <data key="d17">2</data>
+          <data key="d18">python/pandas/data-frame</data>
+        </edge>
+        <edge source="KMeans:1" target="KMeans.fit:1" sourceport="return" targetport="self">
+          <data key="d17">3</data>
+          <data key="d18">python/sklearn/base-clusterer</data>
+        </edge>
+        <edge source="getattr:4" target="KMeans.fit:1" sourceport="return" targetport="X">
+          <data key="d17">4</data>
+          <data key="d18">python/numpy/ndarray</data>
+        </edge>
+        <edge source="KMeans.fit:1" target="getattr:5" sourceport="self!" targetport="0">
+          <data key="d17">3</data>
+          <data key="d18">python/sklearn/base-clusterer</data>
+        </edge>
+        <edge source="KMeans.fit:1" target="getattr:6" sourceport="self!" targetport="0">
+          <data key="d17">3</data>
+          <data key="d18">python/sklearn/base-clusterer</data>
+        </edge>
+      </graph>
+    </node>
+  </graph>
+</graphml>
